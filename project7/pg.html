@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Rentals</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pgPage.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo1.Pk8" alt="">
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">View Pgs</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="showNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close" id="close" onclick="closeNav()">&times;</div>
+        <div class="overlay-box">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="pgList.html">View Pgs</a>
+        </div>
+    </div>
+
+    <section class="pg">
+        <div class="card">
+            <div class="card-img">
+                <img src="images/pgImg/1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="card-content-head">
+                    Shashank ka Hostel
+                </div>
+                <div class="card-content-body">
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quos consequuntur
+                        perferendis dolores. Ullam ut, omnis tenetur sunt incidunt illum eveniet. Molestias culpa nisi
+                        itaque dignissimos cupiditate commodi, maxime laborum sed. Atque eaque quas illo eum, molestias
+                        aperiam expedita! Voluptates, earum repellat ab dolorem deleniti eaque dolor autem quam
+                        voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam sequi quis?
+                        Neque ad, assumenda vel eveniet quis quibusdam quae dolorum laborum perferendis libero qui nulla
+                        eos unde rerum? Voluptatum fuga sapiente a sint vero unde excepturi dolore molestiae et dolores
+                        laborum similique eius quis repellendus, iste possimus. Perferendis, maxime.</div>
+                    <br>
+                    <div class="type">For : male</div>
+                    <div class="phone">Phone: <a href="tel:9772976368">9772976368</a></div>
+                    <br>
+                    <div class="row">
+
+                        <a href="booking.html" class="card-btn">Book now! </a>
+                        <a href="#" class="card-btn">5000 rs</a>
+                        <a href="#" class="card-btn">Contact the pg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="contact">
+        <h2>Share Your reviews no login required !!!!</h2>
+        <form action="#" class="form">
+            <input type="text" required placeholder="Enter your name" name="name">
+            <input type="email" required placeholder="Enter the Email" name="email">
+            <input type="text" required placeholder="Enter a phone no" name="phone">
+            <textarea name="desc" id="desc" cols="30" rows="6" placeholder="enter your reviews here"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </section>
+    <section class="reviews">
+        <h1>Reviews by people</h1>
+        <div class="card">
+            <div class="content">
+                <div class="card-content-head">Shashank</div>
+                <div class="card-content-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo optio, laboriosam molestiae animi
+                    vero dolorem pariatur odit minus doloremque velit.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="card-content-head">Shashank</div>
+                <div class="card-content-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo optio, laboriosam molestiae animi
+                    vero dolorem pariatur odit minus doloremque velit.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="card-content-head">Shashank</div>
+                <div class="card-content-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo optio, laboriosam molestiae animi
+                    vero dolorem pariatur odit minus doloremque velit.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/gmail.png" alt=""></a>
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/tw.jpg" alt=""></a>
+            <a href="#"><img src="images/insta.jpg" alt=""></a>
+        </div>
+        <div class="container">
+            <h3>All rights reserved &copy; |Space Rentals</h3>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>

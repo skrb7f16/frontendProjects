@@ -1,0 +1,89 @@
+body{
+    height: fit-content;
+}
+
+#navbar{
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar a{
+    font-size: 18px;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+#home{
+    height: 380px;
+    flex-direction: column;
+    padding: 3px 60px;
+    overflow: hidden;
+}
+
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 13px;
+}
+.h-primary{
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    max-width: 400px;
+}
+
+
+
+
+
+#client{
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.client-item img{
+   width: 100px;
+   padding: 2px;
+}
+
+
+#contact{
+    justify-content: center;
+    align-items: center;
+}
+
+#contact form{
+    width: 60%;
+    margin: auto;
+}
+
+
+
+
+
+
+footer{
+
+}

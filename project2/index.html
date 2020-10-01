@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirana</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <div class="headerNavbar">
+        <h1>Kirana.com</h1>
+        <div class="parts">
+            <ul class="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" onclick="billShow()">BILL</a></li>
+            </ul>
+            <form class="search">
+                <input type="text" class="searchTextInput" placeholder="Search">
+                <button class="searchBtn">Search</button>
+            </form>
+        </div>
+    </div>
+    <h1 id="heading"></h1>
+    <h2 id="contents"></h2>
+    <div class="container">
+        <ul id="list" class="list">
+            <li><a id="groceries" onclick="show(this.id)">Groceries</a>
+                <div class="container-inside" id="groceries_real">
+                    <ul>
+                    <li onclick="bill(this.innerHTML)">Rice Rs 50/-</li>
+                    <li onclick="bill(this.innerHTML)">Arhar Dal Rs 80/-</li>
+                    <li onclick="bill(this.innerHTML)">Salt Rs 15/-</li>
+                    <li onclick="bill(this.innerHTML)">Sugar Rs 37/-</li>
+                    <li onclick="bill(this.innerHTML)">Channa Dal Rs 70/-</li>
+                    <li onclick="bill(this.innerHTML)">Ghee Rs 450/-</li>
+                    <li onclick="bill(this.innerHTML)">Sarso Oil Rs 90/-</li>
+                    <li onclick="bill(this.innerHTML)">Refine Oil Rs 80/-</li>
+                    <li onclick="bill(this.innerHTML)">Atta Rs 25/-</li>
+                    <li onclick="bill(this.innerHTML)">Maida Rs 30/-</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id="cleaning" onclick="show(this.id)">Cleaning</a>
+                <div class="container-inside" id="cleaning_real">
+                    <ul>
+                        <li onclick="bill(this.innerHTML)">Broom Rs 100/-</li>
+                        <li onclick="bill(this.innerHTML)">Soap RS 20/-</li>
+                        <li onclick="bill(this.innerHTML)">Detergent Rs 150/-</li>
+                        <li onclick="bill(this.innerHTML)">Harpic Rs 240/-</li>
+                        <li onclick="bill(this.innerHTML)">HandWash Rs 200/-</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id="baked" onclick="show(this.id)">Baked Items</a>
+                <div class="container-inside" id="baked_real">
+                    <ul>
+                        <li onclick="bill(this.innerHTML)">Bread Rs 25/-</li>
+                        <li onclick="bill(this.innerHTML)">Brown Bread Rs 35/-</li>
+                        <li onclick="bill(this.innerHTML)">Choclate Cookies Rs 180/-</li>
+                        <li onclick="bill(this.innerHTML)">Pastery Rs 45/-</li>
+                        <li onclick="bill(this.innerHTML)">Cake Rs 300/-</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a id="vegetable" onclick="show(this.id)">Vegetables</a>
+                <div class="container-inside" id="vegetable_real">
+                    <ul>
+                        <li onclick="bill(this.innerHTML)">Potato Rs 12/-</li>
+                        <li onclick="bill(this.innerHTML)">Tomato Rs 15/-</li>
+                        <li onclick="bill(this.innerHTML)">Onion Rs10/-</li>
+                        <li onclick="bill(this.innerHTML)">Cauliflower Rs 30/-</li>
+                        <li onclick="bill(this.innerHTML)">Cabbage Rs 40/-</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="bill-List" id="billTotal">
+
+        </ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

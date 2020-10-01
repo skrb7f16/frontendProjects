@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To iRead</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="css/phone.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1 class="large-text">iRead</h1>
+        </div>
+        <ul class="navlist">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="#">About us</a></li>
+            <li class="list-item"><a href="#">Contact us</a></li>
+        </ul>
+        <div class="right-side">
+            <form action="#" method="get">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <button class="btn">Search</button>
+            </form>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Signup</a>
+        </div>
+
+        <div class="burger" onclick="showNav()" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close" onclick="closenav()">&times;</div>
+        <div class="box">
+            <a href="#">Home</a>
+            <a href="#">Conatct</a>
+            <a href="#">About Us</a>
+            <form action="#" method="get">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <button class="btn">Search</button>
+            </form>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Signup</a>
+        </div>
+    </div>
+
+    <div class=" container jumbotron text-center">
+        <div class="head">
+            <h1 class="large-text">Welcome To horror Stories page</h1>
+            <hr>
+        </div>
+        <div class="body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum facere eos omnis natus rerum esse corporis
+            excepturi, ratione est? Corporis laboriosam sapiente, illum vitae veritatis, consequuntur beatae quas
+            debitis dicta, totam laudantium obcaecati commodi.
+        </div>
+    </div>
+
+    
+    <form action="#" class="form-group">
+        <h2>Comment </h2>
+        <input type="text" name="title" placeholder="Enter the title">
+        <textarea name="intro" id="intro" cols="30" rows="3" placeholder="Introduction"></textarea>
+        <textarea name="body" id="body" cols="30" rows="10" placeholder="Body"></textarea>
+        <textarea name="conclusion" id="conclusion" cols="30" rows="5" placeholder="conclusion"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+
+    <section id="threadlist">
+        <ul class="posts">
+            <li class="post">
+                <h2><a href="thread.html">Bungalow in lonenly</a></h2>
+                <small>Posted by <a href="user.html">XVY</a> at 2012:552:552 12/5/4</small>
+                <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus, minus ex
+                    inventore eos odio ut provident placeat excepturi enim! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repellat quod hic distinctio cumque accusamus neque incidunt dignissimos! Ea,
+                    optio quas......</p>
+            </li>
+            <li class="post">
+                <h2><a href="thread.html">Bungalow in lonenly</a></h2>
+                <small>Posted by xyz at 2012:552:552 12/5/4</small>
+                <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus, minus ex
+                    inventore eos odio ut provident placeat excepturi enim! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repellat quod hic distinctio cumque accusamus neque incidunt dignissimos! Ea,
+                    optio quas......</p>
+            </li>
+            <li class="post">
+                <h2><a href="#">Bungalow in lonenly</a></h2>
+                <small>Posted by xyz at 2012:552:552 12/5/4</small>
+                <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus, minus ex
+                    inventore eos odio ut provident placeat excepturi enim! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repellat quod hic distinctio cumque accusamus neque incidunt dignissimos! Ea,
+                    optio quas.</p>
+            </li>
+            <li class="post">
+                <h2><a href="#">Bungalow in lonenly</a></h2>
+                <small>Posted by xyz at 2012:552:552 12/5/4</small>
+                <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus, minus ex
+                    inventore eos odio ut provident placeat excepturi enim! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Repellat quod hic distinctio cumque accusamus neque incidunt dignissimos! Ea,
+                    optio quas.</p>
+            </li>
+        </ul>
+    </section>
+<script src="js/main.js"></script>
+</body>
+
+</html>

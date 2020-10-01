@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Edu - Transforming Online Educatiion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav" id="navbar">
+        <div class="logo"><img src="meow2.jpg" alt="logo"></div>
+        <ul class="nav-list visibility">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="rightNav visibility">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger" id="burger" onclick="showNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="close" onclick="closeNav()">&times;</div>
+            <div class="nav-option">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">
+                    The future of Education is Here.
+                </p>
+                <p class="text-small">
+                    In this is world we need to switch to online means of education as we all are connected with
+                    internet. We should use it for our benefit
+                </p>
+                <div class="button">
+                    <div>
+                    <button class="btn" onclick="showLogin()">Subscribe</button>
+                    <button class="btn" >Watch Videos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="images/3.jpg" alt="img">
+            </div>
+        </div>
+        <h2 class="root">Do You Want to be:</h2>
+        <h2 class="root" id="root"></h2>
+        
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">The end of costly institutions </p>
+            <p class="sectionSubTag text-small">Here at iEducated we dont follow the trend of making education a
+                business and just making money out of it like other platforms here we want everyone to grow with us. We
+                charge a very minimal amount the amount you just spend on ice creams or choclate in a month for a basic
+                course. The professional courses are also not too costly you can easily afford it some courses are even
+                free so if u just wanna take look at some course and see if it fits you u can take up the free course
+                and we assure you every course here teaches you something infact free ones</p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/2.jpg" alt="img" class="imgFluid" width="300px">
+        </div>
+    </section>
+
+    <section class="section left">
+        <div class="paras">
+            <p class="sectionTag text-big">Easy to access</p>
+            <p class="sectionSubTag text-small">
+                Here You can explore anything not like in class where you have to sit and listen to boring lectures. Not
+                able to communicate withe the teacher or ask doubt. here you can just leave a comment and you will be
+                answered in minutes. We have a team for answering to every comment you put as a question doubt.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/1.jpg" alt="img" class="imgFluid" width="300px">
+        </div>
+    </section>
+
+    <section class="section bm">
+        <div class="paras">
+            <p class="sectionTag text-big">Project Building</p>
+            <p class="sectionSubTag text-small">
+                Here with every course we try to make a project which you can put in your resume.
+                Here you can also interact with the same course students and try to <b>make projects</b> in group
+                irrespective of locations.
+                You and your group will be guided by our experts on the course.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="images/4.jpg" alt="meow.jpg" class="imgFluid" width="300px">
+        </div>
+    </section>
+    <br>
+    <h2 class="text-center">About us by our Members !</h2>
+    <section class="comments" id="about">
+        <div class="comment">
+            <div class="image">
+                <img src="images/dp.jpg" alt="">
+            </div>
+            <div class="body">
+                <div class="name"><b>Shashank Kumar</b></div>
+                <div class="designation">~founding member</div>
+                <div class="words">Hey m Shashank one of the founding member of this platform. We started this because
+                    we felt that how hard it is for a common student to learn things </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="image">
+                <img src="images/aman.jpg" alt="">
+            </div>
+            <div class="body">
+                <div class="name text-big">Aman Pratap Singh</div>
+                <div class="designation">~founding member</div>
+                <div class="words">Hey m Aman one of the founding member of this platform. If you have come to this
+                    platform its excellent choice. </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="image">
+                <img src="images/bhosdi.jpg" alt="">
+            </div>
+            <div class="body">
+                <div class="name text-big">Dharmender Choudary</div>
+                <div class="designation">~User / Head of advertisement</div>
+                <div class="words"> Hey i am Dharmender I was initially the user of the platform. Then i wanted to
+                    contribute for this awesome platform that changed my perspective of learning things.</div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <h2 class="text-center">Here Are Our Schemes !</h2>
+    <section class="pricing" id="pricing">
+        <div class="category">
+            <div class="price">Free signup!</div>
+            <div class="benefits">
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Beginers Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(167, 12, 12);">&times;</h2>Intemediate Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(167, 12, 12);">&times;</h2>Professional Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(167, 12, 12);">&times;</h2>Group Projects
+                </div>
+                <a href="#" class="subscribe-btn" onclick="showLogin()">Signup !</a>
+            </div>
+        </div>
+        <div class="category">
+            <div class="price">Intermediate</div>
+            <div class="benefits">
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Beginers Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Intemediate Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(167, 12, 12);">&times;</h2>Professional Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Group Projects
+                </div>
+                <a href="#" class="subscribe-btn" onclick="showLogin()">Rs. 2000</a>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="price">Professional!</div>
+            <div class="benefits">
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Beginers Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Intemediate Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Professional Courses
+                </div>
+                <div class="row">
+                    <h2 style="color: rgb(48, 231, 48);">&#10004;</h2>Group Projects
+                </div>
+                <a href="#" class="subscribe-btn" onclick="showLogin()">Rs. 5000</a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact US</h2>
+        <div class="form">
+            <form action="">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                <input class="form-input" type="text" name="email" id="email" placeholder="Enter Your email">
+                <textarea class="form-input" name="msg" id="msg"  rows="3"
+                    placeholder="Enter the message"></textarea>
+                <button class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center background" style="color:white">
+        <div class="row">
+            <div class="social">
+            <img src="images/fb.png" alt="">
+            <img src="images/insta.jpg" alt="">
+            <img src="images/gmail.png" alt="">
+            <img src="images/tw.jpg" alt="">
+            </div>
+        </div>
+        <div class="phone">
+        Phone : <a href="tel: +919772976368">+919772976368</a>
+        </div>
+        Copyright &copy; 2027 - all rights reserved
+    </footer>
+
+    <div class="login-overlay" id="login-overlay">
+        <form action="#" class="login-form">
+            <h2>Sign Up!</h2>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Username">
+            <input type="tel" placeholder="Phone no">
+            <input type="email" placeholder="Email">
+            <div class="row">
+                <div>
+                <input type="radio" id="male">
+            <label for="male">Male</label>
+                </div>
+                <div>
+                <input type="radio" id="female">
+            <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <label for="cat">Interested in:</label>
+                <select name="cat" id="cat">
+                    <option value="Python">Python</option>
+                    <option value="C/C++">C/C++</option>
+                    <option value="Web Development">Web development</option>
+                    <option value="Android development">ANdroid Development</option>
+                    <option value="Other">Others</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="dob">Date of Birth: </label>
+                <input type="date" placeholder="D.O.B">
+            </div>
+            <div class="row">
+                <label for="education">Education done :</label>
+                <select name="education" id="education">
+                    <option value="In school">In school</option>
+                    <option value="In College">In College</option>
+                    <option value="Done graduation">Graduated</option>
+                </select>
+            </div>
+            <input type="password" placeholder="Please Enter a password">
+            <div class="row">
+
+                <button class="btn-login">
+                    Signup
+                </button>
+                <a href="#" class="btn-login" onclick="closeLogin()">Later</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+body{
+	background-image:url("../static/meow.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	text-decoration:none;
+	padding:0;
+	margin :0;
+}
+.left{
+	/* border: 2px solid white; */
+	display:inline-block;
+	position: absolute;
+	top:10px;
+	left: 20px;
+	text-decoration:none;
+	text-align: center;
+	width: 20%;
+}
+
+.left img{
+	filter: invert();
+	position: absolute;
+	width:50px;
+	left: 10px;
+}
+.left .name{
+	position: absolute;
+	left:60px;
+}
+.left .first{
+	padding-top: 40px;
+}
+
+ .form-group{
+	list-style: none;
+	padding:5px 10px;
+	margin-top: 10px;
+}
+ .left .form-group li input{
+	border-radius: 3px;
+	color: black;
+	font-size: 15px;
+	height: 20px;
+	padding: 10px;
+	margin-top: 5px;
+	width:100%;
+}
+.left .form-group .btn{
+	font-size:25px;
+	border-radius: 3px;
+	background: none;
+	color:wheat;
+	padding:10px 10px;
+	margin-top: 10px;
+	
+}
+.middle{
+	display: block;
+	width: 36%;
+	margin:10px auto;
+	
+}
+.nav{
+	display: inline-block;
+}
+.nav li{
+	display: inline-block;
+	color: white;
+
+}
+.nav li a{
+	color:white;
+	text-decoration: none;
+	padding: 30px;
+}
+.nav li a:hover ,.nav li a.active {
+	color:grey;
+	text-decoration: underline;
+}
+.right{
+	display:inline-block;
+	position: absolute;
+	top:10px;
+	right: 30px;
+	/* border: 2px solid white; */
+}
+
+.right .btn{
+	color:black;
+	background-color: green;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 6px 0px;
+}
+.right #search{
+	height: 25px;
+	text-align: center;
+	padding: 5px;
+}
+.right .container h1{
+	color:grey;
+	font-size: 35px;
+	margin-top:80px;
+}
+.right .container .list-group li{
+	list-style:square ;
+	margin-top:10px;
+	font-size: 20px;
+}
+
+.animation{
+	position: absolute;
+	bottom:100px;
+	right:500px;
+	top:100px;
+	text-align: center;
+}
+.animation h1{
+	text-decoration:underline;
+	font-style: italic;
+}
+.animation p{
+	font-style: italic;
+	font-size: 15px;
+	color: rgb(221, 171, 8);
+}
+.animation img{
+	border-radius: 10px;
+	filter: grayscale();
+}
+.left .form-group .btn:hover,.btn:hover{
+	background-color:rgb(17, 70, 43);
+	cursor: pointer;
+}
+
+
+/* about page */
+.card{
+	border: 2px solid white;
+	width: 35%;
+	position: absolute;
+	top: 200px;
+	right:450px;
+}
+
+.card .card-title h1{
+	margin-top: 5px;
+}
+
+.card .card-text p{
+	font-style: italic;
+}
+
+.card .btn{
+	font-size: 25px;
+	background-color: rgb(38, 8, 204);
+	border-radius: 7px;
+}
+
+
+
+/* contact page */
+
+.messagesubmit{
+	width:40%;
+	position: absolute;
+	right: 490px;
+	top: 100px;
+	align-items: center;
+	text-align: center;
+	height: 75%;
+	border: 2px solid white;
+
+}
+.messagesubmit .textincontact{
+	text-align: center;
+	font-style: italic;
+}
+ .messagesubmit .form-group li input{
+	border-radius: 3px;
+	color: black;
+	font-size: 15px;
+	height: 20px;
+	padding: 10px;
+	margin-top: 5px;
+	width:80%;
+	
+}
+.messagesubmit .form-group .message{
+	margin-top: 5px;
+	height: 10vh;
+}
+
+
+
+.messagesubmit .main .form-group .btn{
+	font-size: 25px;
+	background-color: rgb(38, 8, 204);
+	border-radius: 7px;
+	margin-top: 10px;
+}
+.messagesubmit .main .form-group .btn:hover{
+	background-color: rgb(6, 6, 66);
+	color:wheat;
+}
+
+
+
+/* more page */
+
+.gallery{
+	align-items: center;
+	border: 2px solid wheat;
+}
+.gallery .row{
+	/* border: 2px solid wheat; */
+	align-items: center;
+}
+.gallery h1{
+	color: grey;
+	text-align: center;
+}
+
+.gallery .row .cols{
+	display: flex;
+	align-items: center;
+	
+}
+
+.gallery .row .cols img{
+	width:23%;
+	border: 2px solid wheat;
+}
+.gallery .row .cols .first{
+	margin-left: 50px;
+}

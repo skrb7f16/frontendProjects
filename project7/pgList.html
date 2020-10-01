@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Rentals</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pgPage.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo1.Pk8" alt="">
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">View Pgs</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="showNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close" id="close" onclick="closeNav()">&times;</div>
+        <div class="overlay-box">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">View Pgs</a>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Here Are the list of all the pgs</h1>
+    <section class="pgList">
+        <div class="card">
+            <div class="card-img">
+                <img src="images/pgImg/1.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <div class="card-content-head">Shashank Hostel</div>
+                <div class="card-content-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum culpa
+                    veritatis magnam voluptatem debitis perferendis. Eveniet quibusdam, reiciendis minus fugit,
+                    architecto
+                    sequi accusamus, quo animi ducimus perspiciatis cupiditate nemo? Illum.</div>
+                <a href="pg.html" class="card-btn">View More</a>
+                <a href="#" class="card-btn">5000 rs</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="images/pgImg/2.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <div class="card-content-head">Bhosdi ka Hostel</div>
+                <div class="card-content-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum culpa
+                    veritatis magnam voluptatem debitis perferendis. Eveniet quibusdam, reiciendis minus fugit,
+                    architecto
+                    sequi accusamus, quo animi ducimus perspiciatis cupiditate nemo? Illum.</div>
+                <a href="#" class="card-btn">View More</a>
+                <a href="#" class="card-btn">5000 rs</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="images/pgImg/3.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <div class="card-content-head">Aman Hostel</div>
+                <div class="card-content-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum culpa
+                    veritatis magnam voluptatem debitis perferendis. Eveniet quibusdam, reiciendis minus fugit,
+                    architecto
+                    sequi accusamus, quo animi ducimus perspiciatis cupiditate nemo? Illum.</div>
+                <a href="#" class="card-btn">View More</a>
+                <a href="#" class="card-btn">5000 rs</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/gmail.png" alt=""></a>
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/tw.jpg" alt=""></a>
+            <a href="#"><img src="images/insta.jpg" alt=""></a>
+        </div>
+        <div class="container">
+            <h3>All rights reserved &copy; |Space Rentals</h3>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>

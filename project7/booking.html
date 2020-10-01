@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Rentals</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pgPage.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo1.Pk8" alt="">
+        </div>
+        <ul class="navlist" id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">View Pgs</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="showNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close" id="close" onclick="closeNav()">&times;</div>
+        <div class="overlay-box">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="pgList.html">View Pgs</a>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align: center;">Book Shashank ka Hostel </h1>
+    <hr><hr>
+    <section class="container">
+        <form action="#" method="post" class="form booking">
+                <input type="text" required placeholder="First name" name="fname">
+                <input type="text" required placeholder="last name name" name="lname">
+            <input type="email" required placeholder="Enter the Email" name="email">
+            <input type="tel" required placeholder="Enter the Phone no" name="phone">
+            <div class="row">
+                <h3>Time period:</h3>
+                <select name="timeperiod" id="timeperiod">
+                    <option value="1 year">1 year</option>
+                    <option value="2 year">2 year</option>
+                    <option value="Short period">Short period</option>
+                </select>
+            </div>
+            <div class="row">
+                <h3>You are:</h3>
+                <select name="for" id="for">
+                    <option value="Student">Student</option>
+                    <option value="Bachelor">Bachelor</option>
+                </select>
+            </div>
+            <div class="row">
+                <h3>food:</h3>
+                <select name="food" id="food">
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                </select>
+            </div>
+            <div class="row">
+                <h3>Date of birth :</h3>
+                <input type="date" required>
+            </div>
+            <button class="btn">Book !</button>
+        </form>
+    </section>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/gmail.png" alt=""></a>
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/tw.jpg" alt=""></a>
+            <a href="#"><img src="images/insta.jpg" alt=""></a>
+        </div>
+        <div class="container">
+            <h3>All rights reserved &copy; |Space Rentals</h3>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>

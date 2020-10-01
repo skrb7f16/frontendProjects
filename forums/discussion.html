@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To iRead</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="css/phone.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1 class="large-text">iRead</h1>
+        </div>
+        <ul class="navlist">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="#">About us</a></li>
+            <li class="list-item"><a href="#">Contact us</a></li>
+        </ul>
+        <div class="right-side">
+            <form action="#" method="get">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <button class="btn">Search</button>
+            </form>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Signup</a>
+        </div>
+
+        <div class="burger" onclick="showNav()" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="close" onclick="closenav()">&times;</div>
+        <div class="box">
+            <a href="#">Home</a>
+            <a href="#">Conatct</a>
+            <a href="#">About Us</a>
+            <form action="#" method="get">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <button class="btn">Search</button>
+            </form>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Signup</a>
+        </div>
+    </div>
+
+    <div class="greater-container">
+        <h1 class="large-text text-center cat-name">Discussion Category</h1>
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="desktop.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2><a href="threadlist.html">Python</a></h2>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum optio iste id numquam
+                    distinctio
+                    molestias. Dolores nam corporis reiciendis id magnam similique laborum officiis animi veniam
+                    reprehenderit? Doloremque incidunt facilis fugit!
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="desktop.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2><a href="threadlist.html">C/C++</a></h2>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum optio iste id numquam
+                    distinctio
+                    molestias. Dolores nam corporis reiciendis id magnam similique laborum officiis animi veniam
+                    reprehenderit? Doloremque incidunt facilis fugit!
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="desktop.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2><a href="threadlist.html">Javascript</a></h2>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum optio iste id numquam
+                    distinctio
+                    molestias. Dolores nam corporis reiciendis id magnam similique laborum officiis animi veniam
+                    reprehenderit? Doloremque incidunt facilis fugit!
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="desktop.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2><a href="threadlist.html">Java</a></h2>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum optio iste id numquam
+                    distinctio
+                    molestias. Dolores nam corporis reiciendis id magnam similique laborum officiis animi veniam
+                    reprehenderit? Doloremque incidunt facilis fugit!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
