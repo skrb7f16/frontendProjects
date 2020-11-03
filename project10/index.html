@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhanaBlog</title>
+    <style>
+        :root {
+            --theme: rgb(51, 5, 5);
+            --theme100: rgb(117, 3, 3);
+            --blue: rgb(71, 84, 160);
+
+        }
+    </style>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <ul class="navlist">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Write</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+        </ul>
+        <div class="menu column">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section id="home" class="column bg-image">
+        <div class="column left-shift">
+            <h1>Nothing brings people closer then</h1><h1 class="style-text-big m">GOOD FOOD</h1>
+            <a href="#form" class="btn btn-theme m">Get started</a>
+        </div>
+    </section>  
+    <hr>
+    <br>
+    <section id="top-blog" class="column">
+        <h1 class="style-text-big">Top Blogs</h1>
+            <div class="row" id="posts">
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+                <div class="column post">
+                    <div class="tag bg-image column" style="background-image: url('images/post-img.jpg');">
+                        <span class="style-text-big">Sushi is life</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="join" class="bg-image column">
+        <div class="joining column" id="signup">
+            <h1>Join us</h1>
+            <form action="#" method="post" id="signupForm" class="column form">
+                <input type="email" name="email" id="email" required placeholder="Email">
+                <input type="text" name="username" id="signupusername" required placeholder="username">
+                <input type="password" name="password" id="signuppassword" required placeholder="password">
+                <input type="password" name="cpassword" id="signupcpassword" required placeholder="confirm password">
+                <button class="btn btn-blue">Join!</button>
+            </form>
+            <span><small>Already a user? <a onclick="showLogin()">Login</a></small></span>
+        </div>
+        <div class="joining column d-none" id="signin">
+            <h1>login !!</h1>
+            <form action="#" method="post" id="signinForm" class="column form">
+                <input type="text" name="username" id="username" required placeholder="username">
+                <input type="password" name="password" id="password" required placeholder="password">
+                <button class="btn btn-blue">Signin!</button>
+            </form>
+            <span><small>Not a user? <a onclick="showSignup()">Signup</a></small></span>
+        </div>
+    </section>
+    
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

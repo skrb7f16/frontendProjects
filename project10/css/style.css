@@ -1,0 +1,44 @@
+#home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/homebg.jpg);
+}
+
+.tag{
+    height: 400px;
+    width: 400px;
+    color: white;
+    margin: 10px;
+}
+
+#posts{
+    flex-wrap: wrap;
+}
+
+#join{
+    background-image: url('../images/blank.jpg');
+    background-attachment: fixed;
+    background-origin: content-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+#join div{
+    width: 30vw;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 4px 4px 10px var(--blue);
+}
+
+input{
+    padding: 5px;
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    margin: 10px;
+}
+
+
+
